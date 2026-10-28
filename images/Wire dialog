@@ -1,0 +1,96 @@
+Z-Boat Wire Connections
+=======================
+
+Reformatted from Wire Connections.docx. Original English technical terms and cable labels are retained; grammar,
+headings, units, and layout have been standardized.
+
+Record status: These are observations reported in the original document, not independently verified wiring
+specifications. Open questions and uncertain descriptions remain marked below. Interface names in the index do
+not establish electrical signal direction.
+
+Contents
+--------
+
+- 1. Overview
+- 2. Central components
+- 3. CCM connection index
+- 4. CCM front: 24 V input
+- 5. CCM rear: E-stop
+- 6. CCM top panel
+- 7. CCM left side
+- 8. CCM right side
+- 9. Items to verify
+- 10. Additional reference photos
+- 11. Image sources and duplicate handling
+
+1. Overview
+-----------
+
+The source document records the boat layout, central components, and cable connections around the Control and
+Communications Module (CCM). Its "overall dimensions" section contains photographs; no numerical measurements
+are provided.
+
+PHOTO: F01: Overall component layout, view 1
+FILE: assets/IMG_1442.jpeg
+
+Figure F01. Overall component layout, view 1.
+
+PHOTO: F02: Overall component layout, view 2
+FILE: assets/IMG_1441.jpeg
+
+Figure F02. Overall component layout, view 2.
+
+PHOTO: F03: Overall boat layout
+FILE: assets/IMG_1440.jpeg
+
+Figure F03. Overall boat layout.
+
+2. Central components
+---------------------
+
+2.1 Central component: CCM / Hydrolink
+--------------------------------------
+
+The source lists CCM / Hydrolink as the central component's connections. Their exact routing remains to be
+checked, as noted in the original TODO.
+
+PHOTO: F04: Central component and TDM-E area
+FILE: assets/word-image09.jpg
+
+Figure F04. Central component and TDM-E area.
+
+PHOTO: F05: Central component cable-routing view
+FILE: assets/word-image05.jpg
+
+Figure F05. Central component cable-routing view.
+
+PHOTO: F06: Central component close-up
+FILE: assets/word-image06.jpg
+
+Figure F06. Central component close-up.
+
+2.2 TDM-E
+---------
+
+The source lists the following TDM-E connections:
+
++-----------------+---------------------------------------------------------------------------------+
+| Connection      | Source description / status                                                     |
++-----------------+---------------------------------------------------------------------------------+
+| Ethernet        | Listed; destination not specified.                                              |
+| Serial port A-1 | Listed; connected device is unknown.                                            |
+| 24 V input      | Reported as connected to one of the 24 V input cables associated with the CCM;  |
+|                 | exact routing needs verification.                                               |
++-----------------+---------------------------------------------------------------------------------+
+
+PHOTO: F07: TDM-E connection panel
+FILE: assets/word-image07.jpg
+
+Figure F07. TDM-E connection panel.
+
+PHOTO: F08: TDM-E power and cable detail
+FILE: assets/word-image08.jpg
+
+Figure F08. TDM-E power and cable detail.
+
+The other TDM-E overview in the Word document duplicates Figure F04; the photo is retained once under Section
