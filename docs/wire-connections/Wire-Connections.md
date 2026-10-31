@@ -24,7 +24,7 @@ The source document records the boat layout, central components, and cable conne
 
 ![F01: Overall component layout, view 1](https://github.com/Wei-Yitong/pe/blob/main/IMG_1441.jpeg?raw=true)
 
-*Figure F01. Overall component layout, view 1.*
+*Figure F01. Overall component layout, view 1004.*
 
 ![F02: Overall component layout, view 2](../../IMG_1441.jpeg)
 
