@@ -22,35 +22,35 @@ Reformatted from **Wire Connections.docx**. Original English technical terms and
 
 The source document records the boat layout, central components, and cable connections around the **Control and Communications Module (CCM)**. Its “overall dimensions” section contains photographs; no numerical measurements are provided.
 
-![F01: Overall component layout, view 1123](https://github.com/Wei-Yitong/pe/blob/main/IMG_1441.jpeg?raw=true)
+![F01: Overall component layout, view overall](#put website here)
 
-*Figure F01. Overall component layout, view 1004.*
+*Figure F01. Overall component layout, view overall.*
 
-![F02: Overall component layout, view 2](../../IMG_1441.jpeg)
+![F02: Overall component layout, view overall front](#put website here)
 
-*Figure F02. Overall component layout, view 2.*
+*Figure F02. Overall component layout, view overall front.*
 
-![F03: Overall boat layout](../../IMG_1440.jpeg)
+![F03: Overall boat layout, view overall back](#put website here)
 
-*Figure F03. Overall boat layout.*
+*Figure F03. Overall component layout, view overall back.*
 
 ## 2. Central components
 
 ### 2.1 Central component: CCM / Hydrolink
 
-The source lists **CCM / Hydrolink** as the central component's connections. Their exact routing remains to be checked, as noted in the original TODO.
+Central component is a yellow box which consists of two inputs, one is **CCM** one **Hydrolink**, the CCM is input is connected to a wire which linkts to the Hydrolink and Autonomy output of the control and communications module.The Hydrolink ouput is connected to TDM-E Serial port A-1. 
 
-![F04: Central component and TDM-E area](assets/word-image09.jpg)
+![F04: Component overview](#website)
 
-*Figure F04. Central component and TDM-E area.*
+*Figure F04. Component overview.*
 
-![F05: Central component cable-routing view](assets/word-image05.jpg)
+![F05: Central component CCM](#website)
 
-*Figure F05. Central component cable-routing view.*
+*Figure F05. Central component CCM cable routing.*
 
-![F06: Central component close-up](assets/word-image06.jpg)
+![F06: Central component Hydrolink](#website)
 
-*Figure F06. Central component close-up.*
+*Figure F06. Central component Hydrolink cable routing.*
 
 ### 2.2 TDM-E
 
@@ -59,18 +59,17 @@ The source lists the following TDM-E connections:
 | Connection | Source description / status |
 | --- | --- |
 | Ethernet | Listed; destination not specified. |
-| Serial port A-1 | Listed; connected device is unknown. |
-| 24 V input | Reported as connected to one of the 24 V input cables associated with the CCM; exact routing needs verification. |
+| Serial port A-1 | Hydrolink in Central Component |
+| 24 V input | Connected to one of the 24 V input cables derived from the 3 batteries |
 
-![F07: TDM-E connection panel](assets/word-image07.jpg)
+![F07: TDM-E connection panel](#website)
 
 *Figure F07. TDM-E connection panel.*
 
-![F08: TDM-E power and cable detail](assets/word-image08.jpg)
+![F08: TDM-E power and cable detail](#website)
 
 *Figure F08. TDM-E power and cable detail.*
 
-The other TDM-E overview in the Word document duplicates Figure F04; the photo is retained once under Section 2.1.
 
 ## 3. CCM connection index
 
@@ -79,46 +78,37 @@ The other TDM-E overview in the Word document duplicates Figure F04; the photo i
 | CCM face | Port / connection | Cable label(s) | Reported routing / notes |
 | --- | --- | --- | --- |
 | Front | 24Volt IN | 24 V cable assembly | Branches toward TDM-E and the front-of-boat battery; see Section 4. |
-| Rear | E-stop | Not specified | Cable identified as E-stop; endpoint not described. |
-| Top | Autonomy | CCM AUTONOMY | White cable; endpoint not described. |
-| Top | GPS | GPS | White cable; endpoint not described. |
-| Top | Hydrolink | CCM HYDRLINK | Label spelling preserved from the source; endpoint not described. |
+| Rear | E-stop | Not specified | Cable identified as E-stop; used to cut down the connection of the propellors. |
+| Top | Autonomy | CCM AUTONOMY | White cable; endpoint Central component CCM. |
+| Top | GPS | GPS | White cable; endpoint white gps module on the lid of Z-boat. |
+| Top | Hydrolink | CCM HYDROLINK | Black cable; endpoint Central component CCM. |
 | Top | 2.4 GHz | 2.4GHZ; 2J | Black cable; reported route to the external white stick and external 2J. |
 | Top | Sounder | Not specified | Listed; routing not documented. |
-| Left | 5 GHz | 5G | Cable connection described; endpoint not specified. |
-| Left | Port Motor | Left port motor | Possible motor-power function; unconfirmed. |
-| Left | P.S. | Left P.S. | Yellow cable reportedly routed aft to one propeller. |
+| Left | 5 GHz | 5G | Black cable; endpoint not specified. |
+| Left | Port Motor | Left port motor | Black cable; route fixed along the left-side wall |
+| Left | P.S. | Left P.S. | Yellow cable; route fixed along left-side wall|
 | Left | AUX12V OUT | 12V; J2; J3; J4 | Reported split into three branches with green/red connector ends. |
-| Right | Starboard Motor | Not specified | Reported route to cables fixed along the right-side wall. |
-| Right | S.S. | Not specified | Reported route to cables fixed along the right-side wall. |
-| Right | Servo | Not specified | Reported route to cables fixed along the right-side wall. |
+| Right | Starboard Motor | Not specified | Black cable; Reported route to cables fixed along the right-side wall. |
+| Right | S.S. | Not specified | Yellow cable; Reported route to cables fixed along the right-side wall. |
+| Right | Servo | Not specified | Yellow cable; Reported route to cables fixed along the right-side wall. |
 
 ## 4. CCM front: 24 V input
 
-**Port label:** `24Volt IN`.
-
-The source calls this an “output” while the port label says “IN.” This document uses the label and leaves the actual power-routing interpretation open.
-
-![F09: CCM front face and 24 V input](../../IMG_1458.jpeg)
-
-*Figure F09. CCM front face and 24 V input.*
-
 ### 4.1 Cable branching
-
+#### 4.1.1 24 v connections
 The original description says that the 24 V cable assembly splits into two smaller cables:
 
 1. One branch connects to **TDM-E**.
-2. The other branch splits into **six smaller cables**, reported as connected to the battery at the front of the boat.
-
-The diagram records that description only. Line connections do not specify current direction, polarity, pin assignments, or a validated electrical topology.
+2. The other branch connects to **24-input coontrol and communication module**
 
 ```text
 24 V cable assembly described in the source
 |
 +-- Branch 1 ---- TDM-E
 |
-`-- Branch 2 ---- Six smaller cables ---- Front-of-boat battery
+`-- Branch 2 ---- 24-input coontrol and communication module
 ```
+
 
 ### 4.2 Connection photos
 
@@ -210,7 +200,7 @@ The Port Motor connection is attached to a cable labelled **Left port motor**. T
 
 ### 7.2 5 GHz
 
-The 5 GHz connection is attached to a cable labelled **5G**. The source does not identify its remote endpoint.
+The 5 GHz connection is attached to a cable labelled **5G**. 
 
 ![F22: 5 GHz connection and 5G cable label](../../IMG_1454.jpeg)
 
@@ -218,7 +208,7 @@ The 5 GHz connection is attached to a cable labelled **5G**. The source does not
 
 ### 7.3 P.S.
 
-A yellow cable labelled **Left P.S.** connects to the P.S. port and is reported to run to the end of the boat, to one of the propellers. The source does not define the abbreviation P.S.
+A yellow cable labelled **Left P.S.** **Right P.S** connects to the P.S. port and is reported to run to the end of the boat. 
 
 ![F23: P.S. connection and cable label](../../IMG_1452.jpeg)
 
@@ -230,7 +220,7 @@ A yellow cable labelled **Left P.S.** connects to the P.S. port and is reported 
 
 ### 7.4 AUX12V OUT
 
-The AUX12V OUT connection is attached to a cable labelled **12V**. The source describes a split into **three smaller wires**, each with green and red connector ends, labelled **J2, J3, and J4**. Individual pin assignments and polarity are not specified.
+The AUX12V OUT connection is attached to a cable labelled **12V**. The source describes a split into **three smaller wires**, each with green and red connector ends, labelled **J2, J3, and J4**. 
 
 ![F25: AUX12V OUT cable split, annotated view](../../IMG_1444.jpeg)
 
@@ -239,8 +229,6 @@ The AUX12V OUT connection is attached to a cable labelled **12V**. The source de
 ![F26: AUX12V OUT branch connector detail](../../IMG_1453.jpeg)
 
 *Figure F26. AUX12V OUT branch connector detail.*
-
-The full-resolution, unannotated original corresponding to the annotated AUX12V OUT view is provided as supplementary Figure S01. Both versions are retained because the annotations add information.
 
 ## 8. CCM right side
 
@@ -254,24 +242,8 @@ The source says that the connected cables lead to cables fixed along the right-s
 
 The second photo under this heading in the source duplicates Figure F18; see Section 6.1 for that routing view.
 
-## 9. Items to verify
 
-### Original open questions
-
-- [ ] Double-check the central component's **CCM and Hydrolink** connections.
-- [ ] Identify the device connected to **serial port A1 / A-1**. The source uses both forms.
-
-### Clarifications identified while organizing the document
-
-- [ ] Confirm the 24 V branch arrangement and the meaning of the reported six smaller cables.
-- [ ] Resolve the source's “output” description versus the `24Volt IN` label.
-- [ ] Verify the connector/interface type described under the original “HDMI Outputs” heading.
-- [ ] Confirm the 2.4 GHz route, the meaning of `2J`, and the intended supporting photo.
-- [ ] Record Sounder routing and the individual Starboard Motor, S.S., and Servo cable mappings.
-- [ ] Confirm the proposed Port Motor power function and define P.S. and S.S.
-- [ ] Record any required physical dimensions; none are provided in the source.
-
-## 10. Additional reference photos
+## 9. Additional reference photos
 
 These distinct GitHub photos supplement the Word document. They are not used to infer new connections. An unannotated original and an annotated version are kept separately when the annotation adds information.
 
@@ -315,29 +287,4 @@ These distinct GitHub photos supplement the Word document. They are not used to 
 
 *Figure S10. CCM rear-panel connector: additional detail.*
 
-## 11. Image sources and duplicate handling
 
-- All 31 Word image occurrences are accounted for by 27 retained primary figures.
-- 22 primary figures use matching, higher-resolution GitHub photos; five use the best available embedded Word images.
-- The 10 other distinct GitHub photos are retained as supplementary figures S01-S10.
-- The repository edition reuses the 32 existing photos at the repository root and adds only the five Word-only image files. Image bytes, resolution, and existing annotations are preserved; images have not been upscaled or regenerated.
-- Four repeated-photo groups from Word are consolidated. Cross-references replace repeated image blocks; associated connection descriptions remain in place.
-- The GitHub upload has no byte-identical or decoded-pixel-identical files. Annotated variants and different camera views are retained. No repository photos were deleted.
-
-The linked photo inventory records source identifiers for traceability. Word media numbers refer to `word/media/imageN.jpeg`, not page numbers.
-
-| Word duplicate group | Retained figure | Decision |
-| --- | --- | --- |
-| image4 + image9 | F04 | Retain image9, the higher-pixel-count version; the other occurrence is rotated. |
-| image5 + image20 | F05 | Retain image5, the higher-resolution version; the other occurrence is rotated/resized. |
-| image15 + image22 | F14 | Use IMG_1465.jpeg once; both occurrences show the annotated 24 V cable 2 photo. |
-| image19 + image31 | F18 | Use IMG_1471.jpeg once; both occurrences show the same cable-routing photo. |
-
-### Provenance
-
-- Word source: `Wire Connections.docx`.
-- GitHub source: [Wei-Yitong/pe](https://github.com/Wei-Yitong/pe/tree/55d8033fc88916b0ac68e32192201180442ad70a).
-- GitHub revision used: `55d8033fc88916b0ac68e32192201180442ad70a`.
-- [Detailed photo inventory](sources/photo-inventory.csv): original occurrence, selected asset, resolution, and SHA-256.
-- [Original text transcription](sources/original-transcription.md): original wording and image order, with links redirected to retained assets.
-- [Duplicate report](sources/duplicate-report.md): retention decisions and GitHub checks.
