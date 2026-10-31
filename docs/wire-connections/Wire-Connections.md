@@ -1,9 +1,4 @@
 # Z-Boat Wire Connections
-
-Reformatted from **Wire Connections.docx**. Original English technical terms and cable labels are retained; grammar, headings, units, and layout have been standardized.
-
-**Record status:** These are observations reported in the original document, not independently verified wiring specifications. Open questions and uncertain descriptions remain marked below. Interface names in the index do not establish electrical signal direction.
-
 ## Contents
 
 - [1. Overview](#1-overview)
