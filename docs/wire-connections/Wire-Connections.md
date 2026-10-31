@@ -22,7 +22,7 @@ Reformatted from **Wire Connections.docx**. Original English technical terms and
 
 The source document records the boat layout, central components, and cable connections around the **Control and Communications Module (CCM)**. Its “overall dimensions” section contains photographs; no numerical measurements are provided.
 
-![F01: Overall component layout, view 1](https://github.com/Wei-Yitong/pe/blob/main/IMG_1441.jpeg?raw=true)
+![F01: Overall component layout, view 1123](https://github.com/Wei-Yitong/pe/blob/main/IMG_1441.jpeg?raw=true)
 
 *Figure F01. Overall component layout, view 1004.*
 
